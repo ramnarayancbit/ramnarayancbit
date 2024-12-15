@@ -17,7 +17,7 @@ def EventGridProcessor(azeventgrid: func.EventGridEvent):
     # Trigger Synapse Pipeline
     try:
         synapse_endpoint = "https://synapasedemo.dev.azuresynapse.net"
-        pipeline_name = "MetadataBasedIngestionPipeline"
+        pipeline_name = "MetadataBasedIngestionPipeline_Aqwe"
 
         # Authenticate using Managed Identity
         credential = DefaultAzureCredential()
