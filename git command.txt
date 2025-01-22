@@ -1,2 +1,4 @@
 git for-each-ref --sort=committerdate refs/heads/ --format="%(refname:short) | %(committerdate) | %(authorname)"
 git for-each-ref --sort=committerdate refs/heads/ refs/remotes/ --format="%(refname:short) | %(committerdate) | %(authorname)"
+git for-each-ref --sort=-authorname refs/heads/ refs/remotes/ --format="%(refname:short) | %(authorname) | %(committerdate)"
+
