@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confluence Bookmark</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ddd;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .expandable {
+            cursor: pointer;
+            background-color: #f9f9f9;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "table-row-group";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Links</th>
+        </tr>
+        <tr class="expandable" onclick="toggleVisibility('azureLinks')">
+            <td>Azure</td>
+            <td colspan="2">Click to expand</td>
+        </tr>
+        <tbody id="azureLinks" class="hidden">
+            <tr>
+                <td></td>
+                <td>Azure Documentation</td>
+                <td><a href="YOUR_AZURE_DOCS_LINK_HERE" target="_blank">Azure Docs</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Azure Architecture Center</td>
+                <td><a href="YOUR_AZURE_ARCHITECTURE_LINK_HERE" target="_blank">Azure Architecture</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Azure Security Best Practices</td>
+                <td><a href="YOUR_AZURE_SECURITY_LINK_HERE" target="_blank">Azure Security</a></td>
+            </tr>
+        </tbody>
+        <tr class="expandable" onclick="toggleVisibility('documentLinks')">
+            <td>Document</td>
+            <td colspan="2">Click to expand</td>
+        </tr>
+        <tbody id="documentLinks" class="hidden">
+            <tr>
+                <td></td>
+                <td>Confluence Page</td>
+                <td><a href="YOUR_CONFLUENCE_LINK_HERE" target="_blank">Go to Confluence</a></td>
+            </tr>
+        </tbody>
+        <tr class="expandable" onclick="toggleVisibility('apiLinks')">
+            <td>API Reference</td>
+            <td colspan="2">Click to expand</td>
+        </tr>
+        <tbody id="apiLinks" class="hidden">
+            <tr>
+                <td></td>
+                <td>API Documentation</td>
+                <td><a href="YOUR_API_DOC_LINK_HERE" target="_blank">Go to API Docs</a></td>
+            </tr>
+        </tbody>
+        <tr class="expandable" onclick="toggleVisibility('bestPracticesLinks')">
+            <td>Best Practices</td>
+            <td colspan="2">Click to expand</td>
+        </tr>
+        <tbody id="bestPracticesLinks" class="hidden">
+            <tr>
+                <td></td>
+                <td>Development and Security Standards</td>
+                <td><a href="YOUR_BEST_PRACTICES_LINK_HERE" target="_blank">Go to Best Practices</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
