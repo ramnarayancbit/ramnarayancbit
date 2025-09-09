@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+    <record>
+        <id>1</id>
+        <details>
+            <name>John Doe</name>
+            <department>Sales</department>
+            <roles>
+                <role>Manager</role>
+                <role>Analyst</role>
+            </roles>
+        </details>
+    </record>
+    <record>
+        <id>2</id>
+        <details>
+            <name>Jane Smith</name>
+            <department>Marketing</department>
+            <roles>
+                <role>Coordinator</role>
+            </roles>
+        </details>
+    </record>
+    <record>
+        <id>abc</id> <!-- Invalid: non-integer -->
+        <details>
+            <name>Bob</name>
+            <department>IT</department>
+            <roles>
+                <role>Engineer</role>
+            </roles>
+        </details>
+    </record>
+</records>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceNumber>INV-1001</InvoiceNumber>
+      <InvoiceDate>2025-08-30</InvoiceDate>
+      <Buyer>
+        <Name>Acme Pty Ltd</Name>
+        <Address>
+          <Line1>123 George St</Line1>
+          <City>Sydney</City>
+          <State>NSW</State>
+          <Postcode>2000</Postcode>
+          <Country>AU</Country>
+        </Address>
+      </Buyer>
+    </Header>
+    <Body>
+      <Items>
+        <LineItem id="LI-001-A">
+          <ItemId>SKU-100-A</ItemId>
+          <Description>Blue Widget</Description>
+          <Quantity>3</Quantity>
+          <Price>19.99</Price>
+          <Meta>
+            <CreatedAt>2025-08-29T10:20:30Z</CreatedAt>
+            <UpdatedAt>2025-08-30T09:00:00Z</UpdatedAt>
+            <Flags>
+              <Flag name="fragile" value="true"/>
+              <Flag name="gift_wrap" value="false"/>
+            </Flags>
+          </Meta>
+          <Taxes>
+            <Tax>
+              <Code>GST</Code>
+              <Amount>1.999</Amount>
+              <TaxBreakup>
+                <Break>
+                  <Type>percentage</Type>
+                  <Rate>10</Rate>
+                </Break>
+              </TaxBreakup>
+            </Tax>
+            <Tax>
+              <Code>ENV</Code>
+              <Amount>0.500</Amount>
+              <TaxBreakup>
+                <Break>
+                  <Type>fixed</Type>
+                  <Rate>0.5</Rate>
+                </Break>
+              </TaxBreakup>
+            </Tax>
+          </Taxes>
+          <Attributes>
+            <Attribute name="Invoice Number" code="INVNO">INV-1001</Attribute>
+            <Attribute name="Color" code="CLR">Blue</Attribute>
+          </Attributes>
+          <Packaging>
+            <Boxes>
+              <Box id="BX-1">
+                <Weight>2.4</Weight>
+                <Dimensions>
+                  <Length>20</Length>
+                  <Width>15</Width>
+                  <Height>10</Height>
+                </Dimensions>
+                <Labels>
+                  <Label>TOP</Label>
+                  <Label>FRAGILE</Label>
+                </Labels>
+              </Box>
+              <Box id="BX-2">
+                <Weight>1.8</Weight>
+                <Dimensions>
+                  <Length>18</Length>
+                  <Width>12</Width>
+                  <Height>8</Height>
+                </Dimensions>
+              </Box>
+            </Boxes>
+          </Packaging>
+          <Serials>
+            <Serial>SN-A1</Serial>
+            <Serial>SN-A2</Serial>
+          </Serials>
+        </LineItem>
+        <LineItem id="LI-002-A">
+          <ItemId>SKU-200-A</ItemId>
+          <Description>Green Widget</Description>
+          <Quantity>1</Quantity>
+          <Price>49.50</Price>
+          <Meta>
+            <CreatedAt>2025-08-29T10:25:00Z</CreatedAt>
+            <UpdatedAt>2025-08-30T09:05:00Z</UpdatedAt>
+          </Meta>
+          <Taxes>
+            <Tax>
+              <Code>GST</Code>
+              <Amount>4.95</Amount>
+            </Tax>
+          </Taxes>
+          <Attributes>
+            <Attribute name="Invoice Number" code="INVNO">INV-1001</Attribute>
+            <Attribute name="WarrantyMonths" code="WRN">24</Attribute>
+          </Attributes>
+        </LineItem>
+      </Items>
+    </Body>
+  </Invoice>
+
+  <Invoice>
+    <Header>
+      <InvoiceNumber>INV-1002</InvoiceNumber>
+      <InvoiceDate>2025-08-31</InvoiceDate>
+      <Buyer>
+        <Name>Globex AU</Name>
+        <Address>
+          <Line1>77 Market Rd</Line1>
+          <City>Melbourne</City>
+          <State>VIC</State>
+          <Postcode>3000</Postcode>
+          <Country>AU</Country>
+        </Address>
+      </Buyer>
+    </Header>
+    <Body>
+      <Items>
+        <LineItem id="LI-003-B">
+          <ItemId>SKU-300-B</ItemId>
+          <Description>Red Widget</Description>
+          <Quantity>5</Quantity>
+          <Price>9.99</Price>
+          <Taxes>
+            <Tax>
+              <Code>GST</Code>
+              <Amount>4.995</Amount>
+            </Tax>
+          </Taxes>
+          <Packaging>
+            <Boxes>
+              <Box id="BX-10">
+                <Weight>3.1</Weight>
+                <Dimensions>
+                  <Length>25</Length>
+                  <Width>20</Width>
+                  <Height>12</Height>
+                </Dimensions>
+              </Box>
+            </Boxes>
+          </Packaging>
+        </LineItem>
+      </Items>
+    </Body>
+</Invoice>
